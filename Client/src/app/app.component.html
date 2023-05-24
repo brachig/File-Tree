@@ -1,0 +1,4 @@
+<h1>Hierarchical File System Tree</h1>
+<input type="text" placeholder="Enter path..." [(ngModel)]="folder.path">
+<button (click)="changeName()">Show</button>
+<app-file-tree [nodes]="rootNodes"></app-file-tree>

@@ -1,0 +1,10 @@
+<ul>
+    <li *ngFor="let node of nodes">
+        <div (click)="toggleNode(node)" [class.des]="node.isFolder">
+            <img *ngIf="node.isFolder" src="../../assets/icons8-folder-48.png">
+            <img *ngIf="!node.isFolder" src="../../assets/icons8-file-48.png">
+            {{ node.name }}
+        </div>
+        <app-file-tree *ngIf="node.isExpanded" [nodes]="node.children"></app-file-tree>
+    </li>
+</ul>

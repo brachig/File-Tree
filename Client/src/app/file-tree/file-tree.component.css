@@ -1,0 +1,17 @@
+.folder {
+
+    color: blue;
+    font-weight: bold;
+  }
+  
+  .file {
+    color: green;
+    font-weight: normal;
+  }
+
+  .des{
+    cursor: pointer;
+  }
+  li{
+    list-style-type: none; 
+  }
